@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tasks Manager</title>
+  </head>
+  <body>
+  <h1>My Tasks</h1>
+  <<% @tasks.each do |task| %>>
+  <%= link_to task.title, task_path(task) %>
+  <% end %>
+  <%= link_to 'new_Tasks', new_path%>
+  </body>
+</html>>
